@@ -53,6 +53,8 @@ ADMIN_CHAT_IDS = {
 
 ENTER_DATES = 0  # single conversation state for /watch
 
+store = Store(DB_PATH)
+
 
 def is_admin(chat_id) -> bool:
     return chat_id in ADMIN_CHAT_IDS
